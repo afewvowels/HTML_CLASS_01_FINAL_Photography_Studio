@@ -1,25 +1,25 @@
+/*
+  Gallery Stuff
+*/
+// Based on incoming url, prep the gallery page by hiding the categories
+// that aren't needed
 window.addEventListener('load', function() {
   if(location.href == "http://kbsmith01.people.ysu.edu/CSIS_1570/final_project/gallery.html?#drone") {
     displayDrone();
-    console.log('drone');
   } else if(location.href == "http://kbsmith01.people.ysu.edu/CSIS_1570/final_project/gallery.html?#environmental") {
     displayEnvironmental();
-    console.log('environmental');
   } else if(location.href == "http://kbsmith01.people.ysu.edu/CSIS_1570/final_project/gallery.html?#portraits") {
     displayPortraits();
-    console.log('portraits');
   } else if(location.href == "http://kbsmith01.people.ysu.edu/CSIS_1570/final_project/gallery.html?#travel") {
     displayTravel();
-    console.log('travel');
   } else if(location.href == "http://kbsmith01.people.ysu.edu/CSIS_1570/final_project/gallery.html?#wildlife") {
     displayWildlife();
-    console.log('wildlife');
   } else if(location.href == "http://kbsmith01.people.ysu.edu/CSIS_1570/final_project/gallery.html?#video") {
     displayVideo();
-    console.log('video');
   }
 });
 
+// Add event listeners to the submenu gallery category items
 drone = document.getElementById('drone_url');
 drone.addEventListener('click', displayDrone);
 
@@ -38,6 +38,9 @@ wildlife.addEventListener('click', displayWildlife);
 video = document.getElementById('video_url');
 video.addEventListener('click', displayVideo);
 
+
+// The functions that take care of hiding and showing the different image
+// categories. Uses a class called .hidden to add/remove a display: none styling
 function displayDrone() {
   var drone = document.getElementsByClassName('drone');
   drone[0].classList.remove('hidden');
@@ -206,12 +209,18 @@ function displayVideo() {
   video[3].classList.remove('hidden');
 }
 
-// Get the modal
+/*
+  Modal image stuff
+*/
+// Define variables for use in function
 var modal = document.getElementById('myModal');
-var modalImg = document.getElementById("img01");
+var modalImg = document.getElementById('img01');
 var images = document.getElementsByClassName('gallery_image');
-// Get the image and insert it inside the modal - use its "alt" text as a caption
+
+// Loop through all image tags and add an event listener...
 for(var i = 0; i < images.length; i++) {
+  // ...that on click unhides the modal div and places the image
+  // that was clicked into the image tag in the modal div
   images[i].addEventListener('click', function() {
     modal.style.display = 'block';
     modalImg.src = this.src;
@@ -219,9 +228,9 @@ for(var i = 0; i < images.length; i++) {
 };
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName('close')[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-    modal.style.display = "none";
+    modal.style.display = 'none';
 }
