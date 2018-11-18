@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+<head>
+  <title>Smith Photography</title>
+  <meta charset='utf-8'>
+  <link rel='stylesheet' href='./css/style_modal.css' type='text/css'>
+  <link rel='stylesheet' href='./css/style_gallery.css' type='text/css'>
+  <link rel='stylesheet' href='./css/style_menu.css' type='text/css'>
+  <link rel='stylesheet' href='./css/style_about.css' type='text/css'>
+  <link rel='stylesheet' href='./css/style_footer.css' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Roboto+Slab:300,700" rel="stylesheet">
+  <script src='./js/scripts_gallery.js' type='text/javascript' defer></script>
+  <script src='./js/scripts_lazy_load.js' type='text/javascript' defer></script>
+  <script src='./js/scripts.js' type='text/javascript' defer></script>
+</head>
+<body>
+  <header id='nav_wrapper'>
+    <div id='logo_title_wrapper'>
+      <img id='logo' src='img/icons/loading_light.gif' data-src='img/icons/icon.svg'>
+      <h2>Stag Photography Studio</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href='./index.html'>Home</a></li>
+        <li id='gallery_item' aria-expanded='false'><a>Gallery</a>
+          <ul id='sub_menu' class='sub_menu_visibility'>
+            <li><a href='./gallery.html?#wildlife' id='wildlife_url'>Wildlife</a></li>
+            <li><a href='./gallery.html?#studio' id='portraits_url'>Portraits</a></li>
+            <li><a href='./gallery.html?#environmental' id='environmental_url'>Environmental</a></li>
+            <li><a href='./gallery.html?#travel' id='travel_url'>Travel</a></li>
+            <li><a href='./gallery.html?#drone' id='drone_url'>Drone</a></li>
+            <li><a href='./gallery.html?#video' id='video_url'>Video</a></li>
+          </ul>
+        </li>
+        <li id='last_menu_item'><a href='./about.html'>About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id='gallery_wrapper'>
+    <h2 class='title drone hidden'>Drone Photography</h2>
+    <section class='gallery_wrapper drone hidden' aria-expanded='false'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/drone/drone01.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/drone/drone02.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/drone/drone03.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/drone/drone04.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/drone/drone05.jpg' class='gallery_image'>
+    </section>
+
+    <h2 class='title environmental hidden'>Environmental Photography</h2>
+    <section class='gallery_wrapper environmental hidden' aria-expanded='false'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/environmental/environmental01.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/environmental/environmental02.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/environmental/environmental03.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/environmental/environmental04.jpg' class='gallery_image'>
+    </section>
+
+    <h2 class='title portraits hidden'>Portrait Photography</h2>
+    <section class='gallery_wrapper portraits hidden' aria-expanded='false'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/portraits/portraits01.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/portraits/portraits02.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/portraits/portraits03.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/portraits/portraits04.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/portraits/portraits05.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/portraits/portraits06.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/portraits/portraits07.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/portraits/portraits08.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/portraits/portraits09.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/portraits/portraits10.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/portraits/portraits11.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/portraits/portraits12.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/portraits/portraits13.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/portraits/portraits14.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/portraits/portraits15.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/portraits/portraits16.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/portraits/portraits17.jpg' class='gallery_image'>
+    </section>
+
+    <h2 class='title travel hidden'>Travel Photography</h2>
+    <section class='gallery_wrapper travel hidden' aria-expanded='false'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/travel/travel01.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/travel/travel02.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/travel/travel03.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/travel/travel04.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/travel/travel05.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/travel/travel06.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/travel/travel07.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/travel/travel08.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/travel/travel09.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/travel/travel10.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/travel/travel11.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/travel/travel12.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/travel/travel13.jpg' class='gallery_image'>
+    </section>
+
+    <h2 class='title wildlife hidden'>Wildlife Photography</h2>
+    <section class='gallery_wrapper wildlife hidden' aria-expanded='false'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife01.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife02.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife03.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife04.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife05.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife06.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife07.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife08.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife09.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife10.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife01.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife02.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife03.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife04.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife05.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife06.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife07.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife08.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife09.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife10.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife11.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife12.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife13.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife14.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife15.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife16.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife17.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife18.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife19.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife20.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife21.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife22.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife23.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife24.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife25.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife26.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife27.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife28.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife29.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife30.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife31.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife32.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife33.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife34.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife35.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife36.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife37.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife38.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife39.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife40.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife41.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife42.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife43.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife44.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife45.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife46.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife47.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife48.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife49.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife50.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife51.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife52.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife53.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife54.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife55.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife56.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife57.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife58.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife59.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife60.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife61.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife62.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife63.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife64.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife65.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife66.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife67.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife68.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife69.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife70.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife71.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife72.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife73.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife74.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife75.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife76.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife77.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife78.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife79.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife80.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife81.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife82.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife83.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife84.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife85.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife86.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife87.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife88.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife89.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife90.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife91.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife92.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife93.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife94.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife95.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife96.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife97.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife98.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife99.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife100.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife101.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife102.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife103.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife104.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife105.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife106.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife107.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife108.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife109.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife110.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife111.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife112.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife113.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife114.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife115.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife116.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife117.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife118.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife119.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife120.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife121.jpg' class='gallery_image'>
+      <img src='img/icons/loading_light.gif' data-src='img/examples/wildlife/wildlife122.jpg' class='gallery_image'>
+    </section>
+
+    <h2 class='title video hidden'>Cinematography</h2>
+    <section class='video_wrapper video hidden' aria-expanded='false'>
+      <video class='video hidden' controls><source src='img/video01_elk.mp4'></video>
+      <video class='video hidden' controls><source src='img/video02_birds.mp4'></video>
+    </section>
+  </section>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+
+
+  <footer>
+    <section id='footer'>
+      <h4>&copy 2018 Keith Smith - All photos courtesy Kevin Smith</h4>
+    </section>
+  </footer>
+
+</body>
+</html>

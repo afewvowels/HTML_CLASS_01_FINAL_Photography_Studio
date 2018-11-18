@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+* {
+  font-family: 'Great Vibes', cursive;
+  font-family: 'Roboto Slab', serif;
+
+  margin: 0;
+  padding: 0;
+
+
+  background-color: #000;
+  color: #fff;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header"
+                       "about"
+                       "footer";
+}
+
+footer {
+  grid-area: footer;
+}
+
+#about_us {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#about_us p {
+  padding-left: 35px;
+  padding-top: 15px;
+}
+
+#about_us_wrapper {
+  grid-area: about;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 155px 150px 0px 150px;
+}
+
+#nav_wrapper {
+  position: fixed;
+  top: 0;
+  grid-area: header;
+}
+
+#photographer_portrait {
+  height: 350px;
+}
+
+@media screen and (max-width: 800px) {
+  #about_us {
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+  }
+
+  #about_us p {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+    padding-bottom: 100px;
+  }
+
+  #about_us_wrapper {
+    padding: 180px 0px 0px 0px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+}

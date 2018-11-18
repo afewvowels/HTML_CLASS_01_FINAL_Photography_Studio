@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+* {
+  font-family: 'Great Vibes', cursive;
+  font-family: 'Roboto Slab', serif;
+
+  margin: 0;
+  padding: 0;
+
+
+  background-color: #000;
+  color: #fff;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "prompt"
+                       "header"
+                       "parallax"
+                       "footer";
+}
+
+footer {
+  grid-area: footer;
+}
+
+h3 {
+  text-align: center;
+  padding-top: 25px;
+  font-size: 1.6em;
+}
+
+header {
+  grid-area: header;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+.parallax01 {
+  background-image: url('../img/parallax/parallax01.jpg');
+}
+.parallax02 {
+  background-image: url('../img/parallax/parallax02.jpg');
+}
+.parallax03 {
+  background-image: url('../img/parallax/parallax03.jpg');
+}
+.parallax04 {
+  background-image: url('../img/parallax/parallax04.jpg');
+}
+.parallax05 {
+  background-image: url('../img/parallax/parallax05.jpg');
+}
+
+.parallax_image {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 800px;
+}
+
+.text {
+  flex: 1 1 auto;
+  padding: 0px 10px;
+}
+
+.text01 {
+  padding-bottom: 50%;
+}
+
+.text_wrapper {
+  margin: 0 auto;
+  padding: 15px 100px 55px 100px;
+  display: flex;
+}
+
+#parallax_section {
+  grid-area: parallax;
+}
+
+#scroll_prompt {
+  height: 80px;
+  grid-area: prompt;
+}
+
+@media screen and (max-width: 800px) {
+  .text_wrapper {
+    flex-direction: column;
+    padding: 15px 45px 55px 45px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .text {
+    flex: 1 1 350px;
+  }
+}
