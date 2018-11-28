@@ -54,6 +54,13 @@ p {
 .parallax05 {
   background-image: url('../img/parallax/parallax05.jpg');
 }
+.parallax06 {
+  background-image: url('../img/parallax/parallax06.jpg');
+}
+
+.parallax_extra {
+  display: none;
+}
 
 .parallax_image {
   background-attachment: fixed;
@@ -89,6 +96,17 @@ p {
 }
 
 @media screen and (max-width: 800px) {
+  .parallax_duplicate {
+    display: none;
+  }
+  .parallax_extra {
+    display: block;
+    background-position: 25% 80%;
+    min-height: 500px;
+  }
+  .parallax_image {
+    background-attachment: scroll;
+  }
   .text_wrapper {
     flex-direction: column;
     padding: 15px 45px 55px 45px;
