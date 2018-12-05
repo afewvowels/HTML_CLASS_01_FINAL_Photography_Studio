@@ -13,8 +13,9 @@
 }
 
 h2 {
-  font-size: 2.0em;
-  font-family: cursive;
+  padding-top: 7px;
+  font-size: 2.2em;
+  font-family: 'Great Vibes', cursive;
   cursor: default;
 }
 

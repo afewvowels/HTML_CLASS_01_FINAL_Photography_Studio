@@ -2,6 +2,14 @@
 
 .gallery_image {
   cursor: pointer;
+  justify-self: stretch;
+  align-self: stretch;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.gallery_image_vertical {
+  grid-row-end: span 2;
 }
 
 .gallery_wrapper {
